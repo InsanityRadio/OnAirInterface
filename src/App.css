@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	background: #CCC;
+	font-family: "Helvetica Neue";
+	font-weight: 400;
+}
+
+.ident {
+	background: #000;
+	color: #FFF;
+	padding: 10px;
+}
+
+.ident > span {
+	float: right;
+	font-size: 2em;
+	background: #fe4f16;
+	padding: 0 10px;
+}
+
+.networks, .docs, .vu {
+	background: #00C;
+	display: block;
+	margin: 10px;
+}
+
+.networks, .vu {
+	float: left;
+	height: 421px;
+	margin-right: 5px;
+}
+
+.vu .inner {
+	height: 100%;
+	padding: 0;
+}
+
+.vu {
+	background: none;
+	padding: 0;
+	margin: 9px 0;
+}
+
+.vu .channel {
+	background: #0F0;
+	float: left;
+	margin-right: 4px;
+	border: 1px solid #000;
+	width: 8px;
+	height: calc(100% - 2px);
+	position: relative;
+}
+
+.vu .channel:before {
+	position: absolute;
+	bottom: 0;
+	height: 20%;
+	width: 100%;
+	content: "";
+	display: block;
+	background: #D00;
+}
+
+.vu .channel:after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	content: "";
+	display: block;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAMAAABlA5WwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAADAFBMVEUAAAD///8CAgIDAwMEBAQFBQUGBgYHBwcICAgJCQkKCgoLCwsMDAwNDQ0ODg4PDw8QEBARERESEhITExMUFBQVFRUWFhYXFxcYGBgZGRkaGhobGxscHBwdHR0eHh4fHx8gICAhISEiIiIjIyMkJCQlJSUmJiYnJycoKCgpKSkqKiorKyssLCwtLS0uLi4vLy8wMDAxMTEyMjIzMzM0NDQ1NTU2NjY3Nzc4ODg5OTk6Ojo7Ozs8PDw9PT0+Pj4/Pz9AQEBBQUFCQkJDQ0NERERFRUVGRkZHR0dISEhJSUlKSkpLS0tMTExNTU1OTk5PT09QUFBRUVFSUlJTU1NUVFRVVVVWVlZXV1dYWFhZWVlaWlpbW1tcXFxdXV1eXl5fX19gYGBhYWFiYmJjY2NkZGRlZWVmZmZnZ2doaGhpaWlqampra2tsbGxtbW1ubm5vb29wcHBxcXFycnJzc3N0dHR1dXV2dnZ3d3d4eHh5eXl6enp7e3t8fHx9fX1+fn5/f3+AgICBgYGCgoKDg4OEhISFhYWGhoaHh4eIiIiJiYmKioqLi4uMjIyNjY2Ojo6Pj4+QkJCRkZGSkpKTk5OUlJSVlZWWlpaXl5eYmJiZmZmampqbm5ucnJydnZ2enp6fn5+goKChoaGioqKjo6OkpKSlpaWmpqanp6eoqKipqamqqqqrq6usrKytra2urq6vr6+wsLCxsbGysrKzs7O0tLS1tbW2tra3t7e4uLi5ubm6urq7u7u8vLy9vb2+vr6/v7/AwMDBwcHCwsLDw8PExMTFxcXGxsbHx8fIyMjJycnKysrLy8vMzMzNzc3Ozs7Pz8/Q0NDR0dHS0tLT09PU1NTV1dXW1tbX19fY2NjZ2dna2trb29vc3Nzd3d3e3t7f39/g4ODh4eHi4uLj4+Pk5OTl5eXm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7v7+/w8PDx8fHy8vLz8/P09PT19fX29vb39/f4+Pj5+fn6+vr7+/v8/Pz9/f3+/v7////5JLncAAAAAnRSTlP/AOW3MEoAAAAVSURBVHjaYmAECCAGRoAAYmAACDAAAA4AAwnPu+UAAAAASUVORK5CYII=);
+	opacity: 0.3;
+}
+
+.vu .channel .channelInner {
+	position: absolute;
+	top: 0;
+	height: 50%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	transition: height 0.3s ease-out;
+}
+
+.docs {
+	margin-left: 260px;
+}
+
+.networks > h3, .docs > h3 {
+	font-weight: 600;
+	font-size: 1em;
+	margin: 0;
+	padding: 5px 6px;
+	color: #FFF;
+}
+
+.inner {
+	background: #CCC;
+	margin: 1px 1px;
+	padding: 5px;
+	text-align: center;
+}
+
+.inner h2 {
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.inner button {
+	border: 1px solid #AAA;
+	background: #F9F9F9;
+	display: block;
+	margin: 10px 0 0px;
+	width: 200px;
+	height: 100px;
+}
+
+.inner button:active {
+	background: #CCC;
+}
+
+p.air {
+	padding: 0 10px;
+}
+
+p.air.on {
+	background: #00CC00;
+	color: #FFF;
+}
+
+.accept.ready {
+	animation: flash 2s infinite;
+	animation-timing-function: step-end;
+}
+
+.docs .inner {
+	background: #FFF;
+	text-align: left;
+	border-bottom: 1px solid #00C;
+}
+
+.docs .inner p {
+	margin: 10px 0 20px;
+}
+
+button:disabled, button:disabled:active {
+	background: #AAA !important;
+}
+
+@keyframes flash {
+	0% {
+		background: #000;
+		color: #FFF;
+	}
+	50% {
+		background: #FFF;
+		color: #000;
+	}
+}
